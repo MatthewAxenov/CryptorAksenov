@@ -1,0 +1,11 @@
+framework module CryptorAksenov {
+  umbrella header "CryptorAksenov.h"
+  export *
+
+  module * { export * }
+}
+
+module CryptorAksenov.Swift {
+  header "CryptorAksenov-Swift.h"
+  requires objc
+}

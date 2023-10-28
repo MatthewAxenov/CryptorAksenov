@@ -13,7 +13,7 @@ public class CoreDataManager {
     public static let shared = CoreDataManager()
     
     let identifier: String = "Matthew.CryptorAksenov"
-    let model: String = "CryptedStringsModel"
+    let model: String = "CryptedDataModel"
     
     lazy var persistentContainer: NSPersistentContainer = {
         
@@ -31,45 +31,42 @@ public class CoreDataManager {
         return container
     }()
     
-    public func saveCryptedString(cryptedString: String) {
+    public func saveCryptedString(cryptedString: Data) {
         let context = persistentContainer.viewContext
-        let contact = NSEntityDescription.insertNewObject(forEntityName: "CryptedStringsModel", into: context) as! CryptedStringsModel
-        contact.stringValue = cryptedString
+        let dataItem = NSEntityDescription.insertNewObject(forEntityName: "CryptedDataModel", into: context) as! CryptedDataModel
+        dataItem.cryptedData = cryptedString
         
         do {
             try context.save()
-            print("✅ String saved succesfuly")
+            print("✅ Saved succesfuly")
             
         } catch let error {
-            print("❌ Failed to write a string to coreData: \(error.localizedDescription)")
+            print("❌ Failed to write to coreData: \(error.localizedDescription)")
         }
     }
     
-    public func fetch() -> [CryptedStringsModel] {
+    public func fetch() -> [CryptedDataModel] {
         let context = persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<CryptedStringsModel>(entityName: "CryptedStringsModel")
+        let fetchRequest = NSFetchRequest<CryptedDataModel>(entityName: "CryptedDataModel")
         
-        do{
-            let strings = try context.fetch(fetchRequest)
-            for (index,string) in strings.enumerated() {
-                print("String \(index): \(string.stringValue ?? "N/A")")
-            }
-            return strings
+        do {
+            let stringsData = try context.fetch(fetchRequest)
+            return stringsData
             
-        }catch let fetchErr {
-            print("❌ Failed to fetch strings:",fetchErr)
+        } catch let fetchErr {
+            print("❌ Failed to fetch stringsData:",fetchErr)
             return []
         }
     }
     
     public func deleteAll() {
         let context = persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<CryptedStringsModel>(entityName: "CryptedStringsModel")
+        let fetchRequest = NSFetchRequest<CryptedDataModel>(entityName: "CryptedDataModel")
         
         do {
-            let strings = try context.fetch(fetchRequest)
-            for string in strings {
-                context.delete(string)
+            let stringsData = try context.fetch(fetchRequest)
+            for stringData in stringsData {
+                context.delete(stringData)
             }
             try context.save()
         } catch let fetchErr {

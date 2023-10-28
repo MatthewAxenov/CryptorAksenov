@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import CoreData
 
 public final class CryptorAksenov {
     
@@ -14,19 +13,20 @@ public final class CryptorAksenov {
     
     public static var strings: [String] {
         get async throws {
-            
-            var error: Unmanaged<CFError>?
-            
-            let privateKey = CryptorKeysHelper.loadKey(name: CryptorKeysHelper.privateKeyName)
+                        
+            let privateKey = CryptorKeysHelper.loadPrivateKey(name: CryptorKeysHelper.privateKeyName)
             
             guard let privateKey = privateKey else {
-                throw error!.takeRetainedValue() as Error
+                throw CryptorAksenovErrors.privateKeyLoadFailed
             }
             
             let cryptedStrings = CoreDataManager.shared.fetch()
             var newArrayOfStrings = [String]()
             for string in cryptedStrings {
-                let newString = try CryptorAksenov.decryptEncodedString(key: privateKey, string: string.stringValue!)
+                guard let cryptedData = string.cryptedData else {
+                    continue
+                }
+                let newString = try CryptorAksenov.decryptEncodedString(key: privateKey, string: cryptedData)
                 newArrayOfStrings.append(newString)
             }
             return newArrayOfStrings
@@ -35,20 +35,8 @@ public final class CryptorAksenov {
     
     /// Шифрует переданную строку и сохраняет её в базу данных
     
-    public static func store(string: String) async throws {
-        
-        let publicKey = CryptorKeysHelper.loadKey(name: CryptorKeysHelper.publicKeyName)
-        
-        if let publicKey = publicKey {
-            let encryptedString = try CryptorAksenov.encryptStringWithPrivateKey(string: string, key: publicKey)
-            CoreDataManager.shared.saveCryptedString(cryptedString: encryptedString)
-        } else {
-            print("publicKey nil make keys will be called")
-            let newPublicKey = try CryptorKeysHelper.makeKeys()
-            let encryptedString = try CryptorAksenov.encryptStringWithPrivateKey(string: string, key: newPublicKey)
-            CoreDataManager.shared.saveCryptedString(cryptedString: encryptedString)
-        }
-        
-        
+    public static func store(string: String, key: SecKey) async throws {
+        let encryptedStringData = try encryptStringWithPublicKey(string: string, key: key)
+        CoreDataManager.shared.saveCryptedString(cryptedString: encryptedStringData)
     }
 }

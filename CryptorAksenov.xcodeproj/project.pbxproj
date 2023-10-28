@@ -7,18 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98749A032AED03E200CE3E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A022AED03E200CE3E04 /* AppDelegate.swift */; };
+		98749A052AED03E200CE3E04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A042AED03E200CE3E04 /* SceneDelegate.swift */; };
+		98749A072AED03E200CE3E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A062AED03E200CE3E04 /* ViewController.swift */; };
+		98749A0A2AED03E200CE3E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98749A082AED03E200CE3E04 /* Main.storyboard */; };
+		98749A0C2AED03E600CE3E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98749A0B2AED03E600CE3E04 /* Assets.xcassets */; };
+		98749A0F2AED03E600CE3E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98749A0D2AED03E600CE3E04 /* LaunchScreen.storyboard */; };
+		98749A302AED043600CE3E04 /* CryptorAksenov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */; };
+		98749A312AED043600CE3E04 /* CryptorAksenov.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98749A3B2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A3A2AED1DE200CE3E04 /* CryptorAksenovErrors.swift */; };
+		98749A3C2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A3A2AED1DE200CE3E04 /* CryptorAksenovErrors.swift */; };
+		98749A3D2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98749A3A2AED1DE200CE3E04 /* CryptorAksenovErrors.swift */; };
 		98D1CB522ADFD90300D7C7D1 /* CryptorAksenov.docc in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB512ADFD90300D7C7D1 /* CryptorAksenov.docc */; };
 		98D1CB582ADFD90300D7C7D1 /* CryptorAksenov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */; };
 		98D1CB5D2ADFD90300D7C7D1 /* CryptorAksenovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB5C2ADFD90300D7C7D1 /* CryptorAksenovTests.swift */; };
 		98D1CB5E2ADFD90300D7C7D1 /* CryptorAksenov.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D1CB502ADFD90300D7C7D1 /* CryptorAksenov.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98D1CB682ADFD91100D7C7D1 /* CryptorAksenov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */; };
-		98D1CB862AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */; };
 		98D1CB8C2AE1550200D7C7D1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */; };
 		98DDED272AEA894000DAF8E7 /* CryptorKeysHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */; };
 		98DDED292AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */; };
+		98DDED782AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED762AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld */; };
+		98DDED792AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED762AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld */; };
+		98F727802AEBFCF100EAB247 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F7277F2AEBFCF100EAB247 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		98749A162AED03E600CE3E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D1CB442ADFD90300D7C7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 987499FF2AED03E200CE3E04;
+			remoteInfo = CryptorAksenovTestHost;
+		};
+		98749A202AED03E700CE3E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D1CB442ADFD90300D7C7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 987499FF2AED03E200CE3E04;
+			remoteInfo = CryptorAksenovTestHost;
+		};
+		98749A322AED043600CE3E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D1CB442ADFD90300D7C7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D1CB4C2ADFD90300D7C7D1;
+			remoteInfo = CryptorAksenov;
+		};
+		98749A382AED04AD00CE3E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D1CB442ADFD90300D7C7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 987499FF2AED03E200CE3E04;
+			remoteInfo = CryptorAksenovTestHost;
+		};
 		98D1CB592ADFD90300D7C7D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98D1CB442ADFD90300D7C7D1 /* Project object */;
@@ -28,24 +69,73 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98749A342AED043700CE3E04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98749A312AED043600CE3E04 /* CryptorAksenov.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		98749A002AED03E200CE3E04 /* CryptorAksenovTestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptorAksenovTestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98749A022AED03E200CE3E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98749A042AED03E200CE3E04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98749A062AED03E200CE3E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98749A092AED03E200CE3E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98749A0B2AED03E600CE3E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98749A0E2AED03E600CE3E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98749A102AED03E600CE3E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98749A152AED03E600CE3E04 /* CryptorAksenovTestHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptorAksenovTestHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98749A1F2AED03E700CE3E04 /* CryptorAksenovTestHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptorAksenovTestHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98749A3A2AED1DE200CE3E04 /* CryptorAksenovErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenovErrors.swift; sourceTree = "<group>"; };
 		98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptorAksenov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D1CB502ADFD90300D7C7D1 /* CryptorAksenov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptorAksenov.h; sourceTree = "<group>"; };
 		98D1CB512ADFD90300D7C7D1 /* CryptorAksenov.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CryptorAksenov.docc; sourceTree = "<group>"; };
 		98D1CB572ADFD90300D7C7D1 /* CryptorAksenovTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptorAksenovTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D1CB5C2ADFD90300D7C7D1 /* CryptorAksenovTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenovTests.swift; sourceTree = "<group>"; };
 		98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenov.swift; sourceTree = "<group>"; };
-		98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptedStringsModel.xcdatamodel; sourceTree = "<group>"; };
 		98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorKeysHelper.swift; sourceTree = "<group>"; };
 		98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenovCryptExtension.swift; sourceTree = "<group>"; };
+		98DDED772AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptedDataModel.xcdatamodel; sourceTree = "<group>"; };
+		98F7277F2AEBFCF100EAB247 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		987499FD2AED03E200CE3E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98749A302AED043600CE3E04 /* CryptorAksenov.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A122AED03E600CE3E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A1C2AED03E700CE3E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98D1CB4A2ADFD90300D7C7D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F727802AEBFCF100EAB247 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +150,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98749A012AED03E200CE3E04 /* CryptorAksenovTestHost */ = {
+			isa = PBXGroup;
+			children = (
+				98749A022AED03E200CE3E04 /* AppDelegate.swift */,
+				98749A042AED03E200CE3E04 /* SceneDelegate.swift */,
+				98749A062AED03E200CE3E04 /* ViewController.swift */,
+				98749A082AED03E200CE3E04 /* Main.storyboard */,
+				98749A0B2AED03E600CE3E04 /* Assets.xcassets */,
+				98749A0D2AED03E600CE3E04 /* LaunchScreen.storyboard */,
+				98749A102AED03E600CE3E04 /* Info.plist */,
+			);
+			path = CryptorAksenovTestHost;
+			sourceTree = "<group>";
+		};
 		98D1CB432ADFD90300D7C7D1 = {
 			isa = PBXGroup;
 			children = (
 				98D1CB4F2ADFD90300D7C7D1 /* CryptorAksenov */,
 				98D1CB5B2ADFD90300D7C7D1 /* CryptorAksenovTests */,
+				98749A012AED03E200CE3E04 /* CryptorAksenovTestHost */,
 				98D1CB4E2ADFD90300D7C7D1 /* Products */,
+				98F7277E2AEBFCF100EAB247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +180,9 @@
 			children = (
 				98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */,
 				98D1CB572ADFD90300D7C7D1 /* CryptorAksenovTests.xctest */,
+				98749A002AED03E200CE3E04 /* CryptorAksenovTestHost.app */,
+				98749A152AED03E600CE3E04 /* CryptorAksenovTestHostTests.xctest */,
+				98749A1F2AED03E700CE3E04 /* CryptorAksenovTestHostUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +194,7 @@
 				98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */,
 				98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */,
 				98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */,
+				98749A3A2AED1DE200CE3E04 /* CryptorAksenovErrors.swift */,
 				98D1CB8E2AE16CDA00D7C7D1 /* CoreData */,
 				98D1CB512ADFD90300D7C7D1 /* CryptorAksenov.docc */,
 			);
@@ -102,10 +212,18 @@
 		98D1CB8E2AE16CDA00D7C7D1 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */,
 				98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */,
+				98DDED762AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		98F7277E2AEBFCF100EAB247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F7277F2AEBFCF100EAB247 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +240,61 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		987499FF2AED03E200CE3E04 /* CryptorAksenovTestHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98749A2D2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHost" */;
+			buildPhases = (
+				987499FC2AED03E200CE3E04 /* Sources */,
+				987499FD2AED03E200CE3E04 /* Frameworks */,
+				987499FE2AED03E200CE3E04 /* Resources */,
+				98749A342AED043700CE3E04 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98749A332AED043600CE3E04 /* PBXTargetDependency */,
+			);
+			name = CryptorAksenovTestHost;
+			productName = CryptorAksenovTestHost;
+			productReference = 98749A002AED03E200CE3E04 /* CryptorAksenovTestHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98749A142AED03E600CE3E04 /* CryptorAksenovTestHostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98749A2E2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHostTests" */;
+			buildPhases = (
+				98749A112AED03E600CE3E04 /* Sources */,
+				98749A122AED03E600CE3E04 /* Frameworks */,
+				98749A132AED03E600CE3E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98749A172AED03E600CE3E04 /* PBXTargetDependency */,
+			);
+			name = CryptorAksenovTestHostTests;
+			productName = CryptorAksenovTestHostTests;
+			productReference = 98749A152AED03E600CE3E04 /* CryptorAksenovTestHostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98749A1E2AED03E700CE3E04 /* CryptorAksenovTestHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98749A2F2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHostUITests" */;
+			buildPhases = (
+				98749A1B2AED03E700CE3E04 /* Sources */,
+				98749A1C2AED03E700CE3E04 /* Frameworks */,
+				98749A1D2AED03E700CE3E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98749A212AED03E700CE3E04 /* PBXTargetDependency */,
+			);
+			name = CryptorAksenovTestHostUITests;
+			productName = CryptorAksenovTestHostUITests;
+			productReference = 98749A1F2AED03E700CE3E04 /* CryptorAksenovTestHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		98D1CB4C2ADFD90300D7C7D1 /* CryptorAksenov */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98D1CB612ADFD90300D7C7D1 /* Build configuration list for PBXNativeTarget "CryptorAksenov" */;
@@ -154,6 +327,7 @@
 			);
 			dependencies = (
 				98D1CB5A2ADFD90300D7C7D1 /* PBXTargetDependency */,
+				98749A392AED04AD00CE3E04 /* PBXTargetDependency */,
 			);
 			name = CryptorAksenovTests;
 			productName = CryptorAksenovTests;
@@ -170,11 +344,23 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					987499FF2AED03E200CE3E04 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					98749A142AED03E600CE3E04 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 987499FF2AED03E200CE3E04;
+					};
+					98749A1E2AED03E700CE3E04 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 987499FF2AED03E200CE3E04;
+					};
 					98D1CB4C2ADFD90300D7C7D1 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 					98D1CB562ADFD90300D7C7D1 = {
 						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 987499FF2AED03E200CE3E04;
 					};
 				};
 			};
@@ -195,11 +381,38 @@
 			targets = (
 				98D1CB4C2ADFD90300D7C7D1 /* CryptorAksenov */,
 				98D1CB562ADFD90300D7C7D1 /* CryptorAksenovTests */,
+				987499FF2AED03E200CE3E04 /* CryptorAksenovTestHost */,
+				98749A142AED03E600CE3E04 /* CryptorAksenovTestHostTests */,
+				98749A1E2AED03E700CE3E04 /* CryptorAksenovTestHostUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		987499FE2AED03E200CE3E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98749A0F2AED03E600CE3E04 /* LaunchScreen.storyboard in Resources */,
+				98749A0C2AED03E600CE3E04 /* Assets.xcassets in Resources */,
+				98749A0A2AED03E200CE3E04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A132AED03E600CE3E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A1D2AED03E700CE3E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98D1CB4B2ADFD90300D7C7D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,14 +430,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		987499FC2AED03E200CE3E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98749A3D2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */,
+				98749A072AED03E200CE3E04 /* ViewController.swift in Sources */,
+				98749A032AED03E200CE3E04 /* AppDelegate.swift in Sources */,
+				98749A052AED03E200CE3E04 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A112AED03E600CE3E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98749A1B2AED03E700CE3E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98D1CB492ADFD90300D7C7D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98D1CB522ADFD90300D7C7D1 /* CryptorAksenov.docc in Sources */,
-				98D1CB862AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld in Sources */,
+				98DDED782AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld in Sources */,
 				98DDED272AEA894000DAF8E7 /* CryptorKeysHelper.swift in Sources */,
 				98D1CB682ADFD91100D7C7D1 /* CryptorAksenov.swift in Sources */,
+				98749A3B2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */,
 				98DDED292AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift in Sources */,
 				98D1CB8C2AE1550200D7C7D1 /* CoreDataManager.swift in Sources */,
 			);
@@ -235,12 +474,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D1CB5D2ADFD90300D7C7D1 /* CryptorAksenovTests.swift in Sources */,
+				98749A3C2AED1DE200CE3E04 /* CryptorAksenovErrors.swift in Sources */,
+				98DDED792AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		98749A172AED03E600CE3E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 987499FF2AED03E200CE3E04 /* CryptorAksenovTestHost */;
+			targetProxy = 98749A162AED03E600CE3E04 /* PBXContainerItemProxy */;
+		};
+		98749A212AED03E700CE3E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 987499FF2AED03E200CE3E04 /* CryptorAksenovTestHost */;
+			targetProxy = 98749A202AED03E700CE3E04 /* PBXContainerItemProxy */;
+		};
+		98749A332AED043600CE3E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D1CB4C2ADFD90300D7C7D1 /* CryptorAksenov */;
+			targetProxy = 98749A322AED043600CE3E04 /* PBXContainerItemProxy */;
+		};
+		98749A392AED04AD00CE3E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 987499FF2AED03E200CE3E04 /* CryptorAksenovTestHost */;
+			targetProxy = 98749A382AED04AD00CE3E04 /* PBXContainerItemProxy */;
+		};
 		98D1CB5A2ADFD90300D7C7D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 98D1CB4C2ADFD90300D7C7D1 /* CryptorAksenov */;
@@ -248,7 +509,158 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		98749A082AED03E200CE3E04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98749A092AED03E200CE3E04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98749A0D2AED03E600CE3E04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98749A0E2AED03E600CE3E04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		98749A272AED03E700CE3E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptorAksenovTestHost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98749A282AED03E700CE3E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptorAksenovTestHost/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98749A292AED03E700CE3E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptorAksenovTestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptorAksenovTestHost";
+			};
+			name = Debug;
+		};
+		98749A2A2AED03E700CE3E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptorAksenovTestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptorAksenovTestHost";
+			};
+			name = Release;
+		};
+		98749A2B2AED03E700CE3E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptorAksenovTestHost;
+			};
+			name = Debug;
+		};
+		98749A2C2AED03E700CE3E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CJB64PWWQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Matthew.CryptorAksenovTestHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptorAksenovTestHost;
+			};
+			name = Release;
+		};
 		98D1CB5F2ADFD90300D7C7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +854,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJB64PWWQJ;
@@ -452,6 +865,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptorAksenovTestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptorAksenovTestHost";
 			};
 			name = Debug;
 		};
@@ -459,6 +873,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJB64PWWQJ;
@@ -469,12 +884,40 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptorAksenovTestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptorAksenovTestHost";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		98749A2D2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98749A272AED03E700CE3E04 /* Debug */,
+				98749A282AED03E700CE3E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98749A2E2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98749A292AED03E700CE3E04 /* Debug */,
+				98749A2A2AED03E700CE3E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98749A2F2AED03E700CE3E04 /* Build configuration list for PBXNativeTarget "CryptorAksenovTestHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98749A2B2AED03E700CE3E04 /* Debug */,
+				98749A2C2AED03E700CE3E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		98D1CB472ADFD90300D7C7D1 /* Build configuration list for PBXProject "CryptorAksenov" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -505,13 +948,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */ = {
+		98DDED762AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */,
+				98DDED772AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodel */,
 			);
-			currentVersion = 98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */;
-			path = CryptedStringsModel.xcdatamodeld;
+			currentVersion = 98DDED772AEBE50300DAF8E7 /* CryptedDataModel.xcdatamodel */;
+			path = CryptedDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum CryptorAksenovErrors: Error {
+    case publicKeyCreationFailed
+    case algorithmNotSupported
+    case encryptionFailed
+    case decryptionFailed
+    case privateKeyLoadFailed
+}

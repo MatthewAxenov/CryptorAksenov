@@ -6,15 +6,34 @@
 //
 
 import Foundation
+import Security
 
 public final class CryptorKeysHelper {
     
-    public static let privateKeyName = "privateKey"
-    public static let publicKeyName = "publicKey"
+    public static let privateKeyName = "privateKeyNameTag1112"
     
     
-    public static func makeKeys() throws -> SecKey {
-        
+    public static func returnPublicKey() throws -> SecKey {
+        let privateKey = try loadOrMakePrivateKey()
+        guard let publicKey = SecKeyCopyPublicKey(privateKey) else {
+            throw CryptorAksenovErrors.publicKeyCreationFailed
+        }
+        return publicKey
+    }
+    
+    
+    public static func loadOrMakePrivateKey() throws -> SecKey {
+        if let privateKey = loadPrivateKey(name: privateKeyName) {
+            return privateKey
+        } else {
+            let privateKey = try makePrivateKey()
+            return privateKey
+        }
+    }
+    
+    
+    private static func makePrivateKey() throws -> SecKey {
+                
         let access = SecAccessControlCreateWithFlags(kCFAllocatorDefault,
                                                      kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
                                                      .privateKeyUsage,
@@ -27,7 +46,7 @@ public final class CryptorKeysHelper {
             kSecAttrKeySizeInBits as String     : 256,
             kSecAttrTokenID as String           : kSecAttrTokenIDSecureEnclave,
             kSecPrivateKeyAttrs as String : [
-                kSecAttrIsPermanent as String       : false,
+                kSecAttrIsPermanent as String       : true,
                 kSecAttrApplicationTag as String    : tag,
                 kSecAttrAccessControl as String     : access
             ]
@@ -37,36 +56,10 @@ public final class CryptorKeysHelper {
             throw error!.takeRetainedValue() as Error
         }
         
-        try saveKey(key: privateKey, name: privateKeyName)
-        
-        guard let publicKey = SecKeyCopyPublicKey(privateKey) else {
-            print("Can't get public key")
-            throw error!.takeRetainedValue() as Error
-        }
-        
-        try saveKey(key: publicKey, name: publicKeyName)
-        return publicKey
+        return privateKey
     }
     
-    
-    public static func saveKey(key: SecKey, name: String) {
-        
-        let tag = name.data(using: .utf8)!
-        let addquery: [String: Any] = [kSecClass as String: kSecClassKey,
-                                       kSecAttrApplicationTag as String: tag,
-                                       kSecAttrKeyType as String: kSecAttrKeyTypeEC,
-                                       kSecValueRef as String: key]
-        
-        let status = SecItemAdd(addquery as CFDictionary, nil)
-        
-        guard status == errSecSuccess else {
-            print("not right status")
-            return
-        }
-    }
-    
-    
-    public static func loadKey(name: String) -> SecKey? {
+    public static func loadPrivateKey(name: String) -> SecKey? {
         let tag = name.data(using: .utf8)!
         let query: [String: Any] = [kSecClass as String: kSecClassKey,
                                     kSecAttrApplicationTag as String: tag,
@@ -76,7 +69,6 @@ public final class CryptorKeysHelper {
         var item: CFTypeRef?
         let status = SecItemCopyMatching(query as CFDictionary, &item)
         guard status == errSecSuccess else {
-            print("nil while load key")
             return nil
         }
         return (item as! SecKey)

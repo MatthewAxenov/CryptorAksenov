@@ -9,63 +9,42 @@ import Foundation
 
 extension CryptorAksenov {
     
-    public static func encryptStringWithPrivateKey(string: String, key: SecKey) throws -> String {
+    public static let encryptionAlgorithm: SecKeyAlgorithm = .eciesEncryptionCofactorVariableIVX963SHA256AESGCM
+    
+    
+    public static func encryptStringWithPublicKey(string: String, key: SecKey) throws -> Data {
         
         var error: Unmanaged<CFError>?
-        
-        
-        let algorithm: SecKeyAlgorithm = .eciesEncryptionCofactorVariableIVX963SHA256AESGCM
-        guard SecKeyIsAlgorithmSupported(key, .encrypt, algorithm) else {
-            print("cant encrypt - algorythm not supported")
-            throw error!.takeRetainedValue() as Error
+        guard SecKeyIsAlgorithmSupported(key, .encrypt, encryptionAlgorithm) else {
+            throw CryptorAksenovErrors.algorithmNotSupported
         }
         
         let stringData = string.data(using: .utf8)!
-        let encryptedStringData = SecKeyCreateEncryptedData(key, algorithm,
+        let encryptedStringData = SecKeyCreateEncryptedData(key, encryptionAlgorithm,
                                                             stringData as CFData,
                                                             &error) as Data?
         guard let encryptedStringData = encryptedStringData else {
-            print("encryptedStringData nil")
-            throw error!.takeRetainedValue() as Error
+            throw error?.takeRetainedValue() as Error? ?? CryptorAksenovErrors.encryptionFailed
         }
-        
-        let encryptedString = String(decoding: encryptedStringData, as: UTF8.self)
-        print("enencryptedString - \(encryptedString)")
-        
-        return encryptedString
+        return encryptedStringData
     }
     
-    public static func decryptEncodedString(key: SecKey, string: String) throws -> String {
+    
+    public static func decryptEncodedString(key: SecKey, string: Data) throws -> String {
         
         var error: Unmanaged<CFError>?
-        
-        let algorithm: SecKeyAlgorithm = .eciesEncryptionCofactorVariableIVX963SHA256AESGCM
-        
-        let stringData = string.data(using: .utf8)
-        
-        guard let stringData = stringData else {
-            throw error!.takeRetainedValue() as Error
+        guard SecKeyIsAlgorithmSupported(key, .decrypt, encryptionAlgorithm) else {
+            throw CryptorAksenovErrors.algorithmNotSupported
         }
         
-        guard SecKeyIsAlgorithmSupported(key, .decrypt, algorithm) else {
-            print("can't decrypt")
-            throw error!.takeRetainedValue() as Error
-            
-        }
-        
-        let clearTextData = SecKeyCreateDecryptedData(key,
-                                                      algorithm,
-                                                      stringData as CFData,
+        let decryptedTextData = SecKeyCreateDecryptedData(key,
+                                                      encryptionAlgorithm,
+                                                      string as CFData,
                                                       &error) as Data?
-        guard let clearTextData = clearTextData else {
-            print("clearTextData nil")
-            throw error!.takeRetainedValue() as Error
-            
+        guard let decryptedTextData = decryptedTextData else {
+            throw error?.takeRetainedValue() as Error? ?? CryptorAksenovErrors.decryptionFailed
         }
-        let clearText = String(decoding: clearTextData, as: UTF8.self)
-        
-        print("decrypted String - \(clearText)")
-        return clearText
-        
+        let decryptedText = String(decoding: decryptedTextData, as: UTF8.self)
+        return decryptedText
     }
 }

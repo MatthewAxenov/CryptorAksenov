@@ -6,10 +6,34 @@
 //
 
 import XCTest
+import Security
 @testable import CryptorAksenov
 
 final class CryptorAksenovTests: XCTestCase {
-
+    
+    func testCryptor() async throws {
+        
+        CoreDataManager.shared.deleteAll()
+//        В тз не было ничего указано про удаление данных. Я добавил строчку выше для тестирования криптора несколько раз подряд, поскольку иначе тест будет с ошибкой - нам каждый раз в базу будет добавляться по 100 строк, в итоге их будет 200, 300..., а сравниваем мы каждый раз с 100
+                
+        let inputStrings = (0..<100).map { _ in UUID().uuidString }
+        
+        for str in inputStrings {
+            do {
+                try await CryptorAksenov.store(string: str)
+            } catch {
+                XCTFail("Error occurred while storing: \(error)")
+            }
+        }
+        let storedStrings = try await CryptorAksenov.strings
+        print("storedStrings - \(storedStrings)")
+        XCTAssertEqual(inputStrings, storedStrings)
+        
+    }
+    
+    
+    
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -32,5 +56,8 @@ final class CryptorAksenovTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+}
 
+enum TestError: Error {
+    case testFailure
 }

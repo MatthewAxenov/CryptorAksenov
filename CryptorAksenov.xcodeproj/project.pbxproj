@@ -11,6 +11,11 @@
 		98D1CB582ADFD90300D7C7D1 /* CryptorAksenov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */; };
 		98D1CB5D2ADFD90300D7C7D1 /* CryptorAksenovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB5C2ADFD90300D7C7D1 /* CryptorAksenovTests.swift */; };
 		98D1CB5E2ADFD90300D7C7D1 /* CryptorAksenov.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D1CB502ADFD90300D7C7D1 /* CryptorAksenov.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D1CB682ADFD91100D7C7D1 /* CryptorAksenov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */; };
+		98D1CB862AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */; };
+		98D1CB8C2AE1550200D7C7D1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */; };
+		98DDED272AEA894000DAF8E7 /* CryptorKeysHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */; };
+		98DDED292AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		98D1CB512ADFD90300D7C7D1 /* CryptorAksenov.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CryptorAksenov.docc; sourceTree = "<group>"; };
 		98D1CB572ADFD90300D7C7D1 /* CryptorAksenovTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptorAksenovTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D1CB5C2ADFD90300D7C7D1 /* CryptorAksenovTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenovTests.swift; sourceTree = "<group>"; };
+		98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenov.swift; sourceTree = "<group>"; };
+		98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptedStringsModel.xcdatamodel; sourceTree = "<group>"; };
+		98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorKeysHelper.swift; sourceTree = "<group>"; };
+		98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorAksenovCryptExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				98D1CB502ADFD90300D7C7D1 /* CryptorAksenov.h */,
+				98D1CB672ADFD91100D7C7D1 /* CryptorAksenov.swift */,
+				98DDED282AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift */,
+				98DDED262AEA894000DAF8E7 /* CryptorKeysHelper.swift */,
+				98D1CB8E2AE16CDA00D7C7D1 /* CoreData */,
 				98D1CB512ADFD90300D7C7D1 /* CryptorAksenov.docc */,
 			);
 			path = CryptorAksenov;
@@ -83,6 +97,15 @@
 				98D1CB5C2ADFD90300D7C7D1 /* CryptorAksenovTests.swift */,
 			);
 			path = CryptorAksenovTests;
+			sourceTree = "<group>";
+		};
+		98D1CB8E2AE16CDA00D7C7D1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */,
+				98D1CB8B2AE1550200D7C7D1 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +136,8 @@
 			dependencies = (
 			);
 			name = CryptorAksenov;
+			packageProductDependencies = (
+			);
 			productName = CryptorAksenov;
 			productReference = 98D1CB4D2ADFD90300D7C7D1 /* CryptorAksenov.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +187,8 @@
 				Base,
 			);
 			mainGroup = 98D1CB432ADFD90300D7C7D1;
+			packageReferences = (
+			);
 			productRefGroup = 98D1CB4E2ADFD90300D7C7D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D1CB522ADFD90300D7C7D1 /* CryptorAksenov.docc in Sources */,
+				98D1CB862AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld in Sources */,
+				98DDED272AEA894000DAF8E7 /* CryptorKeysHelper.swift in Sources */,
+				98D1CB682ADFD91100D7C7D1 /* CryptorAksenov.swift in Sources */,
+				98DDED292AEA8A2C00DAF8E7 /* CryptorAksenovCryptExtension.swift in Sources */,
+				98D1CB8C2AE1550200D7C7D1 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +377,7 @@
 		98D1CB622ADFD90300D7C7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -376,6 +409,7 @@
 		98D1CB632ADFD90300D7C7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -407,6 +441,7 @@
 		98D1CB652ADFD90300D7C7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJB64PWWQJ;
@@ -423,6 +458,7 @@
 		98D1CB662ADFD90300D7C7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJB64PWWQJ;
@@ -467,6 +503,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		98D1CB842AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */,
+			);
+			currentVersion = 98D1CB852AE14EF000D7C7D1 /* CryptedStringsModel.xcdatamodel */;
+			path = CryptedStringsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 98D1CB442ADFD90300D7C7D1 /* Project object */;
 }
